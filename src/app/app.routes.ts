@@ -5,9 +5,13 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { LayoutComponent } from './common-ui/layout/layout.component';
 
 export const routes: Routes = [
-    {path: '', component:LayoutComponent, children: [
-        {path: '', component:SearchPageComponent},
-        {path: 'profile', component:ProfilePageComponent}
-    ]},
-    {path: 'login', component:AuthComponent}
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: '', component: SearchPageComponent },
+      { path: 'profile', component: ProfilePageComponent },
+    ],
+  },
+  { path: 'login', component: AuthComponent },
 ];

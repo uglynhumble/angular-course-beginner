@@ -8,15 +8,14 @@ import { ProfileCardComponent } from '../../common-ui/profile-card/profile-card.
   standalone: true,
   imports: [ProfileCardComponent],
   templateUrl: './search-page.component.html',
-  styleUrl: './search-page.component.scss'
+  styleUrl: './search-page.component.scss',
 })
 export class SearchPageComponent {
-  profileService = inject(ProfileService)
-  profiles: Profile[] = []
-  constructor(){
-    this.profileService.getTestAccounts()
-    .subscribe( val => {
-      this.profiles = val
-    })
+  profileService = inject(ProfileService);
+  profiles: Profile[] = [];
+  constructor() {
+    this.profileService.getTestAccounts().subscribe((val) => {
+      this.profiles = val;
+    });
   }
 }
