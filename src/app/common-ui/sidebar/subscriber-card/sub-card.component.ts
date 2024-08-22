@@ -7,8 +7,8 @@ import { ImgUrlPipe } from '../../../helpers/pipes/img-url.pipe';
   standalone: true,
   imports: [ImgUrlPipe],
   templateUrl: './sub-card.component.html',
-  styleUrl: './sub-card.component.scss'
+  styleUrl: './sub-card.component.scss',
 })
 export class SubCardComponent {
-  @Input() profile!: Profile
+  @Input() profile!: Profile;
 }
